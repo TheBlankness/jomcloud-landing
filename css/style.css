@@ -104,6 +104,21 @@ button {
   border: 0;
 }
 
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
 .container {
   max-width: var(--max-width);
 }
@@ -565,8 +580,8 @@ h3 {
   padding: 24px;
 }
 
-.feature-card i,
-.payment-option i {
+.feature-card .icon,
+.payment-option .icon {
   width: 46px;
   height: 46px;
   display: inline-grid;
@@ -576,7 +591,7 @@ h3 {
   border-radius: var(--radius);
   background: var(--surface-soft);
   color: var(--accent);
-  font-size: 1.2rem;
+  padding: 11px;
 }
 
 .payment-grid {
@@ -635,9 +650,11 @@ h3 {
   color: var(--text);
 }
 
-.contact-methods i {
+.contact-methods .icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
   color: var(--accent);
-  font-size: 1.2rem;
 }
 
 .contact-form {

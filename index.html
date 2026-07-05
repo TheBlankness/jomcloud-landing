@@ -14,12 +14,74 @@
 
   <link rel="icon" href="images/fevicon.png" type="image/gif" />
   <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body data-theme="dark">
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-gauge" viewBox="0 0 24 24">
+      <path d="M4 14a8 8 0 1 1 16 0" />
+      <path d="M12 14l4-4" />
+      <path d="M8 18h8" />
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24">
+      <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z" />
+      <path d="M9 12l2 2 4-5" />
+    </symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24">
+      <path d="M20 12a8 8 0 0 1-13 6" />
+      <path d="M4 12a8 8 0 0 1 13-6" />
+      <path d="M17 3v5h-5" />
+      <path d="M7 21v-5h5" />
+    </symbol>
+    <symbol id="icon-support" viewBox="0 0 24 24">
+      <path d="M5 13a7 7 0 0 1 14 0" />
+      <path d="M5 13v4a2 2 0 0 0 2 2h2v-6H7a2 2 0 0 0-2 2z" />
+      <path d="M19 13v4a2 2 0 0 1-2 2h-2v-6h2a2 2 0 0 1 2 2z" />
+      <path d="M14 19h-2" />
+    </symbol>
+    <symbol id="icon-bank" viewBox="0 0 24 24">
+      <path d="M4 9h16" />
+      <path d="M6 9v9" />
+      <path d="M10 9v9" />
+      <path d="M14 9v9" />
+      <path d="M18 9v9" />
+      <path d="M3 18h18" />
+      <path d="M12 4l8 5H4l8-5z" />
+    </symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24">
+      <rect x="3" y="6" width="18" height="12" rx="2" />
+      <path d="M3 10h18" />
+      <path d="M7 15h4" />
+    </symbol>
+    <symbol id="icon-phone-wallet" viewBox="0 0 24 24">
+      <rect x="7" y="3" width="10" height="18" rx="2" />
+      <path d="M10 7h4" />
+      <path d="M11 17h2" />
+      <path d="M9 12h6" />
+    </symbol>
+    <symbol id="icon-invoice" viewBox="0 0 24 24">
+      <path d="M7 3h8l4 4v14H7V3z" />
+      <path d="M15 3v5h4" />
+      <path d="M10 12h6" />
+      <path d="M10 16h6" />
+    </symbol>
+    <symbol id="icon-chat-phone" viewBox="0 0 24 24">
+      <path d="M5 19l1.4-3.2A7.5 7.5 0 1 1 9 18.4L5 19z" />
+      <path d="M10 8c.3 2.5 1.7 4 4 4" />
+      <path d="M10 8l1.5-1.2 1.2 2-1.1 1" />
+      <path d="M14 12l1-1.1 2 1.2L15.8 14" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M7 5l3 3-2 2c1.3 2.6 3.4 4.7 6 6l2-2 3 3-2 3c-7-1-12-6-13-13l3-2z" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="M4 7l8 6 8-6" />
+    </symbol>
+  </svg>
+
   <header class="site-header" id="top">
     <div class="container header-shell">
       <a class="brand" href="#top" aria-label="JomCloud home">
@@ -239,22 +301,22 @@
 
         <div class="feature-grid">
           <div class="feature-card">
-            <i class="fa fa-tachometer" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-gauge"></use></svg>
             <h3>Live resources</h3>
             <p>CPU, memory, storage, and bandwidth status are easy to scan.</p>
           </div>
           <div class="feature-card">
-            <i class="fa fa-shield" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg>
             <h3>Security controls</h3>
             <p>DDoS protection, firewall status, and access details stay close.</p>
           </div>
           <div class="feature-card">
-            <i class="fa fa-refresh" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-refresh"></use></svg>
             <h3>Backups</h3>
             <p>Weekly backups and restore requests are clearly visible.</p>
           </div>
           <div class="feature-card">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-support"></use></svg>
             <h3>Support</h3>
             <p>Customers can reach JomCloud quickly from the panel or WhatsApp.</p>
           </div>
@@ -272,22 +334,22 @@
 
         <div class="payment-grid">
           <div class="payment-option">
-            <i class="fa fa-university" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-bank"></use></svg>
             <h3>Online banking</h3>
             <p>FPX style bank transfer flow for Malaysian customers.</p>
           </div>
           <div class="payment-option">
-            <i class="fa fa-credit-card" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-card"></use></svg>
             <h3>Card payments</h3>
             <p>Clear card checkout for quick monthly renewals.</p>
           </div>
           <div class="payment-option">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-phone-wallet"></use></svg>
             <h3>E-wallet ready</h3>
             <p>Make smaller plan upgrades feel simple and familiar.</p>
           </div>
           <div class="payment-option">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-invoice"></use></svg>
             <h3>Manual invoice</h3>
             <p>Support bank transfer and invoice requests for businesses.</p>
           </div>
@@ -333,15 +395,15 @@
 
           <div class="contact-methods">
             <a href="https://wa.me/60123866217?text=Hi%20JomCloud%2C%20I%20want%20to%20ask%20about%20VPS%20hosting">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-chat-phone"></use></svg>
               <span>WhatsApp +60 12-386 6217</span>
             </a>
             <a href="tel:+60123866217">
-              <i class="fa fa-phone" aria-hidden="true"></i>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-phone"></use></svg>
               <span>Call +60 12-386 6217</span>
             </a>
             <a href="mailto:iddinishak@gmail.com">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg>
               <span>iddinishak@gmail.com</span>
             </a>
           </div>
